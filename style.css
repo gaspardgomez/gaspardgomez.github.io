@@ -19,20 +19,35 @@ main {
 
 
 /* Header */
-header {
-  margin-bottom: 35px;
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
-h1 {
-  font-size: 2.1rem;
+.profile-photo {
+  width: 155px;
+  height: 155px;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-info h1 {
+  font-size: 2.2rem;
   font-weight: normal;
-  margin: 0 0 4px 0;
+  margin: 0 0 8px 0;
   line-height: 1.15;
 }
 
-.subtitle {
+.profile-info .subtitle {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #555555;
 }
 
@@ -137,6 +152,7 @@ footer {
 
 
 /* Phones / small screens */
+
 @media (max-width: 600px) {
 
   main {
@@ -144,17 +160,18 @@ footer {
     padding: 0 18px;
   }
 
-  h1 {
-    font-size: 1.8rem;
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
   }
 
   .profile-photo {
-    float: none;
-    display: block;
-    width: 130px;
+    width: 140px;
+    height: 140px;
+  }
 
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
+  .profile-info h1 {
+    font-size: 1.8rem;
   }
 }
