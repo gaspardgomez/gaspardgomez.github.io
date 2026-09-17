@@ -22,8 +22,8 @@ main {
 .profile-header {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .profile-photo {
